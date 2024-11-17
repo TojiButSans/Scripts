@@ -24,7 +24,7 @@ local tL = Instance.new("TextLabel")
 tL.Size = UDim2.new(1, 0, 0, 50) -- size
 tL.Position = UDim2.new(0, 0, 0, 0) -- Top
 tL.BackgroundTransparency = 1 -- bg
-tL.Text = decodeBase64("Q3JlZGl0cyB0byB4eDAyQW5kcmVzMDh4eC9TZWFibHVlIGZvciB0ZW1wbGF0ZQ==") -- Decoded text
+tL.Text = decodeBase64("S0ogU0NSSVBUIE1BREUgQlkgUEhYWSBFRElUUyBBTkQgVE9KSUJVVFNBTlM=") -- Decoded text
 tL.TextColor3 = Color3.new(1, 1, 1) --clr
 tL.Font = Enum.Font.Arcade 
 tL.TextScaled = true -- scale
