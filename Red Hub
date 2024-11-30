@@ -1,1 +1,45 @@
-hello
+game.StarterGui:SetCore("SendNotification", {
+Title = "RED HUB";
+Text = "KJ Script Made By TojiButSans";
+Duration = 10;
+Icon = "rbxassetid://0"; -- leave it like that if you don't want the icon
+Button1 = "cool"; -- name of it
+Button2 = "idc stfu"; -- remove this line if you only want 1 button
+})
+-- remove this script at bottom if you don't wan tsb notification sound
+s= Instance.new("Sound")
+s.SoundId = "rbxassetid://3398620867"
+s:Play()
+s.Volume = 1
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local colors = {
+    SchemeColor = Color3.fromRGB(151,0,0),
+    Background = Color3.fromRGB(17, 17, 17),
+    Header = Color3.fromRGB(0, 0, 1),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(0, 0, 0)
+}
+local Window = Library.CreateLib("Red Hub || Strongest BattleGround", colors)
+local Tab = Window:NewTab("KJ Base Moves")
+local Section = Tab:NewSection("Moves")
+Section:NewButton("Ravage", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/R7nS14SY"))()
+end)
+Section:NewButton("Swift Sweep", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Q4kpAfYX"))()
+end)
+Section:NewButton("Collateral Ruin", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/NPuAZmn7"))()
+end)
+local Tab = Window:NewTab("KJ Ultimate Moves")
+local Section = Tab:NewSection("Moves")
+Section:NewButton("Five Seasons", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/7fZDXjWg"))()
+end)
+for theme, color in pairs(themes) do
+    Section:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+        Library:ChangeColor(theme, color3)
+    end)
+end
+
