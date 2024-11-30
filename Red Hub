@@ -12,7 +12,7 @@ s.SoundId = "rbxassetid://3398620867"
 s:Play()
 s.Volume = 1
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tariviste/Kavo-Mobile/main/SourceCode"))()
 local colors = {
     SchemeColor = Color3.fromRGB(151,0,0),
     Background = Color3.fromRGB(17, 17, 17),
